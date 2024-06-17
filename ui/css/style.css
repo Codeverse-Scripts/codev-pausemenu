@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Barlow", sans-serif;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  pointer-events: none;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+
+.lines {
+  position: absolute;
+  left: -16%;
+  top: 0;
+  height: 140vh;
+  display: flex;
+  gap: 1vw;
+  transform-origin: center;
+  rotate: -25.5deg;
+}
+.lines .line-b {
+  width: 15vw;
+  height: 100%;
+  background: linear-gradient(180deg, #FF0039 0%, rgba(255, 0, 57, 0) 100%);
+}
+.lines .line-m {
+  width: 10vw;
+  height: 100%;
+  background: linear-gradient(180deg, #FF0039 0%, rgba(255, 0, 57, 0) 100%);
+}
+.lines .line-s {
+  width: 5vw;
+  height: 100%;
+  background: linear-gradient(180deg, #FF0039 0%, rgba(255, 0, 57, 0) 100%);
+}
+
+main {
+  width: 85vw;
+  height: 80vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+}
+main .header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+main .header .box-r {
+  display: flex;
+  gap: 1.5vw;
+}
+main .header .box {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding-right: 20px;
+  text-align: right;
+  border-radius: 6px;
+  position: relative;
+  background: linear-gradient(270deg, rgba(255, 0, 57, 0.2) 0%, rgba(255, 0, 57, 0.08) 87.65%);
+}
+main .header .box .text-wrapper .title {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+main .header .box .text-wrapper .text {
+  color: #FF0039;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  line-height: 100%;
+}
+main .header .box .icon-wrapper {
+  height: 100%;
+  width: 75px;
+  border-radius: 6px 0px 0px 6px;
+  background: rgba(255, 0, 57, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .header .box .icon-wrapper .player-img {
+  width: 47px;
+  height: 47px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.3019607843);
+}
+main .header .box .icon-wrapper .player-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100%;
+  height: calc(100% - 20vh - 75px);
+}
+main .container .box {
+  height: 100%;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+main .container .box:hover {
+  background: rgba(5, 5, 5, 0.65);
+}
+main .container .box .img {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+main .container .box .img img {
+  width: 100%;
+}
+main .container .box .icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+main .container .box .icons .icon-l {
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  z-index: 20;
+}
+main .container .box .icons .icon-r {
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  z-index: 20;
+}
+main .container .text-wrapper {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+main .container .text-wrapper .subtitle {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+main .container .text-wrapper .title {
+  color: #FF0039;
+  text-shadow: 0px 0px 20px rgba(255, 0, 57, 0.75);
+  font-size: 20px;
+  font-weight: 700;
+}
+main .container .box-l {
+  width: 100%;
+}
+main .container .box-l .subtitle {
+  font-size: 20px;
+}
+main .container .box-l .title {
+  font-size: 40px;
+}
+main .container .box-l .img-1 {
+  position: absolute;
+  right: 40%;
+  bottom: 0;
+  z-index: 15;
+  pointer-events: none;
+}
+main .container .box-l .img-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  pointer-events: none;
+}
+main .container .box-m {
+  width: 45%;
+}
+main .container .box-s-wrapper {
+  width: 55%;
+  display: flex;
+  gap: 1vw;
+}
+main .container .box-s {
+  width: 33.33%;
+}
+main .container .top {
+  width: 100%;
+  height: 50%;
+}
+main .container .bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 1vw;
+}
+
+/*# sourceMappingURL=style.css.map */

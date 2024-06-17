@@ -1,0 +1,7 @@
+You can open the menu with this trigger:
+TriggerEvent("codev-pausemenu:openMenu")
+
+And close with this trigger:
+TriggerEvent("codev-pausemenu:closeMenu")
+
+Don't forget to set your custom events from config.

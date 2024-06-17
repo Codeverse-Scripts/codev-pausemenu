@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEV PAUSEMENU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="assets/bg.png" class="main-bg">
+
+    <div class="lines">
+        <div class="line-b"></div>
+        <div class="line-m"></div>
+        <div class="line-s"></div>
+    </div>
+
+    <main>
+        <div class="header">
+            <div class="box-l">
+                <div class="box">
+                    <div class="icon-wrapper">
+                        <div class="player-img">
+                            <img src="assets/user-default.png" id="player-pp">
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="title" id="job">POLICE - SERGENT</div>
+                        <div class="text" id="name">CODEVERSE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-r">
+                <div class="box">
+                    <div class="icon-wrapper">
+                        <img src="assets/bank.svg">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="title">BANK</div>
+                        <div class="text" id="bank">15.988$</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon-wrapper">
+                        <img src="assets/piggy.svg">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="title">WALLET</div>
+                        <div class="text" id="wallet">15.988$</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon-wrapper">
+                        <img src="assets/clock.svg">
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="title">CURRENT TIME</div>
+                        <div class="text"><span class="date"></span> - <span class="clock"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="top">
+                <div class="box box-l" onclick="btnClick('custom-1')">
+                    <div class="icons">
+                        <div class="icon-l"><img src="assets/corner-l.svg"></div>
+                        <div class="icon-r"><img src="assets/corner-r.svg"></div>
+                    </div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle">PERKS</div>
+                        <div class="title">BATTLEPASS</div>
+                    </div>
+
+                    <div class="img-l">
+                        <img src="assets/lg-1.png" class="img-1">
+                        <img src="assets/lg-2.png" class="img-2">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="box box-m" onclick="btnClick('custom-2')">
+                    <div class="icons">
+                        <div class="icon-l"><img src="assets/corner-l.svg"></div>
+                        <div class="icon-r"><img src="assets/corner-r.svg"></div>
+                    </div>
+
+                    <div class="text-wrapper">
+                        <div class="subtitle">EXPLORE SOME V.I.P WEPONS</div>
+                        <div class="title">V.I.P WEAPON SHOP</div>
+                    </div>
+
+                    <div class="img">
+                        <img src="assets/custom-1.png">
+                    </div>
+                </div>
+                <div class="box-s-wrapper">
+                    <div class="box box-s" onclick="btnClick('map')">
+                        <div class="icons">
+                            <div class="icon-l"><img src="assets/corner-l.svg"></div>
+                            <div class="icon-r"><img src="assets/corner-r.svg"></div>
+                        </div>
+
+                        <div class="text-wrapper">
+                            <div class="subtitle">MAP</div>
+                            <div class="title">GAME MAP</div>
+                        </div>
+
+                        <div class="img">
+                            <img src="assets/map.png">
+                        </div>
+                    </div>
+                    <div class="box box-s" onclick="btnClick('settings')">
+                        <div class="icons">
+                            <div class="icon-l"><img src="assets/corner-l.svg"></div>
+                            <div class="icon-r"><img src="assets/corner-r.svg"></div>
+                        </div>
+
+                        <div class="text-wrapper">
+                            <div class="subtitle">SETTINGS</div>
+                            <div class="title">GAME SETTINGS</div>
+                        </div>
+
+                        <div class="img">
+                            <img src="assets/setting.png">
+                        </div>
+                    </div>
+                    <div class="box box-s" onclick="btnClick('exit')">
+                        <div class="icons">
+                            <div class="icon-l"><img src="assets/corner-l.svg"></div>
+                            <div class="icon-r"><img src="assets/corner-r.svg"></div>
+                        </div>
+
+                        <div class="text-wrapper">
+                            <div class="subtitle">EXIT</div>
+                            <div class="title">EXIT GAME</div>
+                        </div>
+
+                        <div class="img">
+                            <img src="assets/door.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
